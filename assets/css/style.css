@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.quiz-container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px blueviolet;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    color: black;
+    visibility: hidden;
+}
+
+.quiz-header {
+    padding: 1rem;
+}
+
+h2{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+ul li{
+    margin: 1rem 0;
+    font-size: 1rem 0;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+article{
+    color: white;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    color: white;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+
+}
+
+h1{
+    color: white;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+    font-style: italic;
+    color: white;
+}
+
+p3{
+    justify-content: center;
+    display: flex;
+}
+
+button:hover {
+    background-color:rgb(13, 238, 96);
+}
+
+html {
+	height: 100%;
+	display: flex;
+}
+
+body {
+	position: relative;
+	margin: auto;
+    margin-top: 10%;
+	background-image: url("https://images.unsplash.com/photo-1659386930859-a79d703e4d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+	perspective: 500px;
+    font-family: 'Abel', sans-serif;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	transform: rotatex(10deg);
+	animation: rotateAngle 6s linear infinite;
+}
+
+button {
+	display: block;
+	position: relative;
+	margin: 0.5em 0;
+	padding: .8em 2.2em;
+	cursor: pointer;
+	background: #ffffff;
+	border: none;
+	border-radius: .4em;
+
+	text-transform: uppercase;
+	font-size: 1.4em;
+	font-family: 'Abel', sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+
+	mix-blend-mode: color-dodge;
+	perspective: 500px;
+	transform-style: preserve-3d;
+
+}
+
+button1{
+    font-family: 'Abel', sans-serif;
+    background-color: aqua;
+    display: block;
+	position: relative;
+	margin: 0.5em 0;
+	padding: .8em 2.2em;
+	cursor: pointer;
+	background: #ffffff;
+	border: none;
+	border-radius: .4em;
+    text-align: center;
+
+}
+
+button1:hover {
+    background-color:rgb(13, 238, 96);
+}
+
+@keyframes rotateAngle {
+	0% {
+		transform: rotateY(0deg) rotateX(10deg);
+		animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+	}
+	25% {
+		transform: rotateY(20deg) rotateX(10deg);
+	}
+	50% {
+		transform: rotateY(0deg) rotateX(10deg);
+		animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+	}
+	75% {
+		transform: rotateY(-20deg) rotateX(10deg);
+	}
+	100% {
+		transform: rotateY(0deg) rotateX(10deg);
+	}
+}
+
+@keyframes translateWobble {
+  0% {
+		opacity: 0;
+		transform: translate3d(
+			calc(var(--z) * 0px), 
+			calc(var(--z) * 0px), 
+			calc(var(--z) * 0px)
+		);
+  }
+  16% {
+		transform: translate3d(
+			calc(var(--z) * 160px), 
+			calc(var(--z) * 160px), 
+			calc(var(--z) * 160px)
+		);
+  }
+  28% {
+		opacity: 1;
+		transform: translate3d(
+			calc(var(--z) * 70px), 
+			calc(var(--z) * 70px), 
+			calc(var(--z) * 70px)
+		);
+  }
+  44% {
+		transform: translate3d(
+			calc(var(--z) * 130px), 
+			calc(var(--z) * 130px), 
+			calc(var(--z) * 130px)
+		);
+  }
+  59% {
+		transform: translate3d(
+			calc(var(--z) * 85px), 
+			calc(var(--z) * 85px), 
+			calc(var(--z) * 85px)
+		);
+  }
+  73% {
+		transform: translate3d(
+			calc(var(--z) * 110px), 
+			calc(var(--z) * 110px), 
+			calc(var(--z) * 110px)
+		);
+  }
+	88% {
+		opacity: 1;
+		transform: translate3d(
+			calc(var(--z) * 90px), 
+			calc(var(--z) * 90px), 
+			calc(var(--z) * 90px)
+		);
+  }
+  100% {
+		opacity: 1;
+		transform: translate3d(
+			calc(var(--z) * 100px), 
+			calc(var(--z) * 100px), 
+			calc(var(--z) * 100px)
+		);
+  }
+}
+
+form{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+

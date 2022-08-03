@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Code Game</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    
+    </head>
+    <body>
+        <main><button id="1"><span>Lets Play!</span></button>
+        </main>
+        <p>
+            <h1 class="time" id="clock" style="text-align:center;"></h1>
+            <div id="main"></div>
+        </p>
+
+        <article>
+            <div class="quiz-container" id="quiz">
+                <div class="quiz-header">
+                    <h2><div id="question">Question Text</div></h2>
+                        <ul>
+                            <li>
+                                <input type="radio" id="a" class="answer" name="answer">
+                                <label id="a_text" for="a">Answer</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="b" class="answer" name="answer">
+                                <label id="b_text" for="b" class="answer">Answer</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="c" class="answer" name="answer">
+                                <label id="c_text" for="c">Answer</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="d" class="answer" name="answer">
+                                <label id="d_text" for="d">Answer</label>
+                            </li>
+                        </ul>
+                </div>
+                <button1 class="button" id="submit">Submit</button>
+            </div>
+        </article>
+        <br>
+        <h3 id="score"></h3>
+        <p id="demo"></p>
+      
+        <form id="lb" method="POST">
+            <label for="displayname"></label>
+            <input type="text" name="displayname" placeholder="Save your high score!" id="player-text"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <section id="3">
+            <p>Leaderboard:</p>
+            <ul id="player-list"></ul>
+        </section>
+
+        <script src=".\assets\js\script.js"></script>
+    </body>
+</html> 
+
